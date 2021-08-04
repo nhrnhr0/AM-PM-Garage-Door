@@ -1,14 +1,24 @@
 :root {
   --fs-main: 1.5rem;
+  --fs-title: 3rem;
   --clr-1: #393D3F;
   --clr-2: #e7e7ec;
+  --clr-2-darker:#dbdbe0;
   --clr-3: #C6C5B9;
+  --clr-3-darker: #b6b5a9;
+  --clr-3-lighter: #d8d7c9;
   --clr-4: #62929E;
   --clr-5: #546A7B;
   --clr-accent-1: #ff4800fa;
   --clr-text-1: #fff;
   --clr-text-2: #000;
   --clr-text-3: #000;
+}
+
+.fw-bold {
+  font-weight: bold;
+  font-size: larger;
+  display: inline-block;
 }
 
 body {
@@ -67,11 +77,16 @@ body {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  margin: auto;
 }
 
 .sec-2 .form {
-  background-color: var(--clr-5);
-  color: var(--clr-text-1);
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  background-color: var(--clr-2-darker);
+  color: var(--clr-text-2);
+  padding: 50px;
+  margin: 50px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -133,6 +148,7 @@ body {
 .sec-3 {
   background-color: var(--clr-3);
   color: var(--clr-text-3);
+  padding-bottom: 500px;
 }
 
 .sec-3 .warning {
@@ -155,5 +171,133 @@ body {
   display: inline-block;
   font-size: larger;
   font-weight: bold;
+}
+
+.sec-3 .content .title {
+  font-size: var(--fs-title);
+}
+
+.sec-3 .content .bullets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 100px;
+}
+
+.sec-3 .content .bullets .bullet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.sec-3 .content .bullets .bullet .icon {
+  width: 75px;
+  display: inline;
+}
+
+.sec-3 .content .bullets .bullet .text {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.sec-3 .cta-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 100px;
+}
+
+.sec-3 .cta-block button {
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  padding: 20px;
+  background-color: var(--clr-accent-1);
+  color: var(--clr-text-1);
+  font-size: large;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 80px;
+}
+
+.sec-3 .cta-block .wraper {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: var(--clr-2);
+  padding: 25px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sec-3 .cta-block .wraper img {
+  width: 50px;
+  padding-right: 25px;
+}
+
+.sec-3 .cta-block .wraper img svg {
+  stroke: "blue";
+  fill: "purple";
+}
+
+.sec-3 .points .card-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.sec-3 .points .card-row .card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 50px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: var(--clr-3-lighter);
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.sec-3 .points .card-row .card .title {
+  font-size: larger;
+  text-decoration: underline;
+  text-align: center;
+  padding: 10px;
+}
+
+.sec-3 .points .card-row .card .title:hover {
+  background-color: yellow;
+  cursor: default;
+}
+
+.sec-3 .points .card-row .card ul {
+  list-style-image: url("/imgs/star.svg");
+}
+
+.sec-3 .points .card-row .card ul li:hover {
+  background-color: yellow;
+  cursor: default;
 }
 /*# sourceMappingURL=style.css.map */
