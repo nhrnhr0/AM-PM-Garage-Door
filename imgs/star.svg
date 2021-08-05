@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" stroke="lightyellow" fill="yellow" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="yellow" stroke="lightyellow">
+
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" d="m12,0.587l3.668,7.568l8.332,1.151l-6.064,5.828l1.48,8.279l-7.416,-3.967l-7.417,3.967l1.481,-8.279l-6.064,-5.828l8.332,-1.151l3.668,-7.568z"/>
+ </g>
+</svg>
