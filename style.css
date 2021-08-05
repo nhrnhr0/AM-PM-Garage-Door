@@ -299,7 +299,7 @@ body {
 }
 
 .sec-3 .points .card-row .card ul {
-  list-style-image: url("/imgs/star.svg");
+  list-style-image: url("./imgs/star.svg");
 }
 
 .sec-4 .reviews {
