@@ -61,7 +61,7 @@ body {
     input[type=button] {
         padding: 20px;
         margin: auto;
-        width: 70%;
+        width: 100%;
         background-color: var(--clr-accent-1);
         color: var(--clr-text-1);
         font-size: larger;
@@ -228,7 +228,7 @@ body {
                     background-color: var(--clr-2);
                 }
                 flex:1;
-                margin: 50px;
+                margin: 30px;
                 @include shadow-2();
                 background-color: var(--clr-3-lighter);
                 padding: 30px;
@@ -264,12 +264,20 @@ body {
             flex: 1;
             margin: 30px;
             padding: 10px;
-            .title {
-                font-size: 4.5rem;
-                padding-left: 4%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            * {
+                
             }
-            .text {
-                padding-left: 4%;
+            .content{
+                .title {
+                    font-size: 4.5rem;
+                    padding-left: 4%;
+                }
+                .text {
+                    padding-left: 4%;
+                }
             }
 
             .person {
@@ -278,7 +286,8 @@ body {
                 padding:3%;
                 
                 .face {
-                    max-height: 75px;
+                    height: 75px;
+                    width: 75px;
                     border-radius: 50%;
                     display: inline-block;
                     padding-right: 5%;
