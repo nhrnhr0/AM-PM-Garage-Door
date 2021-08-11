@@ -107,9 +107,12 @@ body {
   background-attachment: fixed;
 }
 
-.sec-1 .bg .wraper {
-  position: absolute;
-  bottom: 20px;
+.sec-2 {
+  background-color: var(--clr-2);
+  color: var(--clr-text-2);
+}
+
+.sec-2 .content-wraper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,30 +122,28 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--clr-1);
-  padding: 35px;
+  background-color: var(--clr-2-darker);
+  border-radius: 25px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.sec-1 .bg .wraper .content {
+.sec-2 .content-wraper .content {
+  padding: 35px;
   padding-left: 3%;
 }
 
-.sec-1 .bg .wraper .content .part-1 {
-  font-size: var(--fs-main);
+.sec-2 .content-wraper .content .part-1 {
+  font-size: 2rem;
 }
 
-.sec-1 .bg .wraper .content .part-2 {
-  font-size: var(--fs-title);
+.sec-2 .content-wraper .content .part-2 {
+  font-size: 3rem;
   font-weight: bold;
 }
 
-.sec-1 .bg .wraper .content .part-3 {
-  font-size: var(--fs-main);
-}
-
-.sec-2 {
-  background-color: var(--clr-2);
-  color: var(--clr-text-2);
+.sec-2 .content-wraper .content .part-3 {
+  font-size: 2rem;
 }
 
 .sec-2 .main {
@@ -653,11 +654,19 @@ body {
   margin-bottom: 30px;
 }
 
-.sec-6 .text {
+.sec-6 .counters-wraper {
+  border-radius: 25px;
+  -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 6px 6px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.23);
+  padding: 20px;
+  background-color: var(--clr-2);
+}
+
+.sec-6 .counters-wraper .text {
   font-size: var(--fs-small-title);
 }
 
-.sec-6 .numbers {
+.sec-6 .counters-wraper .numbers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,7 +674,7 @@ body {
       justify-content: space-around;
 }
 
-.sec-6 .numbers .number .num {
+.sec-6 .counters-wraper .numbers .number .num {
   font-size: var(--fs-title);
   text-align: center;
   font-weight: bold;

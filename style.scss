@@ -117,41 +117,50 @@ body {
         background-attachment: fixed;
     
     
-        .wraper {
-            position: absolute;
-            bottom: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: var(--clr-1);
-            padding: 35px;
-            img {
-
-            }
-            .content {
-                padding-left: 3%;
-                
-
-                .part-1 {
-                    font-size: var(--fs-main);
-                }
-
-                .part-2 {
-                    font-size: var(--fs-title);
-                    font-weight: bold;
-                }
-
-                .part-3 {
-                    font-size: var(--fs-main);
-                }
-            }
-        }
+        
     }
 }
 
 .sec-2 {
     background-color: var(--clr-2);
     color: var(--clr-text-2);
+
+    .content-wraper {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--clr-2-darker);
+        border-radius: 25px;
+        @include shadow-2();
+        //padding: 35px;
+        img {
+
+        }
+        .content {
+            padding:35px;
+            
+            //@include shadow-2();
+            padding-left: 3%;
+            
+
+            .part-1 {
+                //font-size: var(--fs-main);
+                font-size: 2rem;
+            }
+
+            .part-2 {
+                //font-size: var(--fs-title);
+                font-size: 3rem;
+                font-weight: bold;
+            }
+
+            .part-3 {
+                //font-size: var(--fs-main);
+                font-size: 2rem;
+            }
+        }
+    }
 
     .main {
         display: flex;
@@ -570,23 +579,30 @@ body {
         margin-bottom: 30px;
     }
 
-    .text {
 
-        font-size: var(--fs-small-title);
-    }
+    .counters-wraper {
+        border-radius: 25px;
+        @include shadow-3();
+        padding: 20px;
+        background-color: var(--clr-2);
+        .text {
 
-    .numbers {
-        display: flex;
-        justify-content: space-around;
+            font-size: var(--fs-small-title);
+        }
 
-        .number {
-            .num {
-                font-size: var(--fs-title);
-                text-align: center;
-                font-weight: bold;
+        .numbers {
+            display: flex;
+            justify-content: space-around;
+
+            .number {
+                .num {
+                    font-size: var(--fs-title);
+                    text-align: center;
+                    font-weight: bold;
+                }
+
+                .deskription {}
             }
-
-            .deskription {}
         }
     }
 }
