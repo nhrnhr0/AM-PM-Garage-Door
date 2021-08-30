@@ -123,6 +123,20 @@ body {
   font-size: var(--fs-main);
   padding: 0px;
   margin: 0px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .form {
@@ -171,16 +185,17 @@ body {
 }
 
 .sec {
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  /*padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 50px;
+    padding-top: 50px;*/
 }
 
 .sec-1 {
   padding: 0px;
   margin: 0px;
   height: 60vh;
+  width: 100%;
   position: relative;
 }
 
@@ -275,6 +290,7 @@ body {
 }
 
 .sec-2 {
+  width: 100%;
   background-color: #FFFDD0;
   color: var(--clr-text-2);
   /*.bottom {
@@ -295,12 +311,22 @@ body {
 
 .sec-2 .title {
   text-align: center;
+  -webkit-margin-before: 0.17em;
+          margin-block-start: 0.17em;
+  -webkit-margin-after: 0.17em;
+          margin-block-end: 0.17em;
 }
 
 .sec-2 .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .sec-2 .main .info {
@@ -308,6 +334,7 @@ body {
       -ms-flex: 2;
           flex: 2;
   margin: auto;
+  margin-top: 0;
 }
 
 .sec-2 .main .info ul {
@@ -346,6 +373,7 @@ body {
   background-color: var(--clr-hen-blue);
   position: relative;
   border: 1px solid blue;
+  margin-top: 0;
 }
 
 @-webkit-keyframes move-arrow {
@@ -487,6 +515,7 @@ body {
   background-attachment: fixed;
   background-position: center center;
   padding: 0px;
+  width: 100%;
 }
 
 .sec-3 .content-wraper {
@@ -741,7 +770,21 @@ body {
 }
 
 .sec-3 .content-wraper .points .card-row .card ul {
-  list-style-image: url("./imgs/star.svg");
+  list-style: none;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.sec-3 .content-wraper .points .card-row .card ul li {
+  margin: 0;
+  padding: 14px 0 14px 45px;
+  list-style: none;
+  background-image: url("./imgs/star.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 36px;
 }
 
 .sec-4 h1 {
@@ -815,6 +858,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #e9e7e7;
+  border-radius: 35px;
 }
 
 .sec-5 .part1 .about {
@@ -824,8 +869,11 @@ body {
 }
 
 .sec-5 .part1 .about .title {
-  text-align: center;
   text-decoration: underline;
+  -webkit-margin-before: 0.1em;
+          margin-block-start: 0.1em;
+  -webkit-margin-after: 0.1em;
+          margin-block-end: 0.1em;
 }
 
 .sec-5 .part1 .about .text {
@@ -847,6 +895,36 @@ body {
 }
 
 .sec-5 .part2 {
+  /*
+        .gg-container {
+            width: 100%;
+
+            .gg-box {
+                img {
+                    transition: 500ms;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        z-index: 10;
+                        filter: brightness(75%);
+                    }
+                }
+            }
+        }
+*/
+}
+
+.sec-5 .part2 .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.sec-5 .part2 .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -858,21 +936,9 @@ body {
           align-items: center;
 }
 
-.sec-5 .part2 .gg-container {
-  width: 100%;
-}
-
-.sec-5 .part2 .gg-container .gg-box img {
-  -webkit-transition: 500ms;
-  transition: 500ms;
-}
-
-.sec-5 .part2 .gg-container .gg-box img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  z-index: 10;
-  -webkit-filter: brightness(75%);
-          filter: brightness(75%);
+.sec-5 .part2 .swiper-slide img {
+  display: block;
+  width: 300px;
 }
 
 .sec-6 {

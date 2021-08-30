@@ -173,6 +173,11 @@ body {
     font-size: var(--fs-main);
     padding: 0px;
     margin: 0px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .form {
@@ -217,10 +222,11 @@ body {
 }
 
 .sec {
-    padding-left: 3%;
+    /*padding-left: 3%;
     padding-right: 3%;
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 50px;*/
+    
 }
 
 .sec-1 {
@@ -228,6 +234,7 @@ body {
     padding: 0px;
     margin: 0px;
     height: 60vh;
+    width: 100%;
     position: relative;
 
     .bg {
@@ -324,11 +331,14 @@ body {
 }
 
 .sec-2 {
+    width: 100%;
     background-color: #FFFDD0; //var(--clr-2);
     color: var(--clr-text-2);
 
     .title {
         text-align: center;
+        margin-block-start: 0.17em;
+        margin-block-end: 0.17em;
         //font-size: var(--fs-title);
     }
 
@@ -336,11 +346,14 @@ body {
     .main {
         display: flex;
 
+        justify-content: start;
+        align-items: start;
+    
         .info {
             flex: 2;
 
             margin: auto;
-
+            margin-top: 0;
             ul {
                 padding-inline-start: 0px;
                 list-style: none;
@@ -370,6 +383,7 @@ body {
             background-color: var(--clr-hen-blue);
             position: relative;
             border: 1px solid blue;
+            margin-top: 0;
 
             @keyframes move-arrow {
                 0% {
@@ -503,6 +517,7 @@ body {
     background-attachment: fixed;
     background-position: center center;
     padding: 0px;
+    width: 100%;
 
     .content-wraper {
         width: 100%;
@@ -709,9 +724,21 @@ body {
                     }
 
                     ul {
-                        list-style-image: url('./imgs/star.svg');
+                        //list-style-image: url('./imgs/star.png');
+                        list-style:none;
+                        margin-block-end: 0em;
+                        padding-inline-start: 0px;
 
-                        li {}
+                        li {
+                            margin: 0;
+                            padding: 14px 0 14px 45px;
+                            list-style: none;
+                            background-image: url("./imgs/star.png");
+                            background-repeat: no-repeat;
+                            background-position: left center;
+                            background-size: 36px;
+                            
+                        }
                     }
                 }
             }
@@ -789,14 +816,17 @@ body {
 .sec-5 {
     .part1 {
         display: flex;
-
+        background-color: #e9e7e7;
+        border-radius: 35px;
         .about {
             flex: 3;
 
             .title {
                 //font-size: var(--fs-title);
-                text-align: center;
+                //text-align: center;
                 text-decoration: underline;
+                margin-block-start: 0.1em;
+                margin-block-end: 0.1em;
             }
 
             .text {
@@ -817,10 +847,30 @@ body {
     }
 
     .part2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+          }
+    
+          .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+          }
+    
+          .swiper-slide img {
+            display: block;
+            //width: 100%;
+            width: 300px;
+            
+          }
+/*
         .gg-container {
             width: 100%;
 
@@ -836,7 +886,7 @@ body {
                 }
             }
         }
-
+*/
     }
 
 }
