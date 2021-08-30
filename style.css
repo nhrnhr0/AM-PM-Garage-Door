@@ -162,9 +162,9 @@ body {
   height: 100%;
   background-image: url("./imgs/header.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position-y: top;
-  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
 }
 
 .sec-1 .bg .bg-wraper {

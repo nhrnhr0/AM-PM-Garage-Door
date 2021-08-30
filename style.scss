@@ -217,9 +217,10 @@ body {
 
         background-repeat: no-repeat;
         //background-size: 100% 100%;
-        background-size:contain;
-        background-position-y:top;
-        background-attachment: fixed;
+        background-size:cover;
+        background-position-y:center;
+        background-position-x: center;
+        //background-attachment: fixed;
     
     
         
