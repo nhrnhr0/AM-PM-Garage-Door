@@ -23,8 +23,11 @@
 
 .fw-bold {
   font-weight: bold;
-  font-size: larger;
   display: inline-block;
+}
+
+.fw-large {
+  font-size: larger;
 }
 
 .container {
@@ -194,7 +197,7 @@ body {
 .sec-1 {
   padding: 0px;
   margin: 0px;
-  height: 60vh;
+  height: 80vh;
   width: 100%;
   position: relative;
 }
@@ -205,7 +208,7 @@ body {
   background-image: url("./imgs/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: center;
+  background-position-y: bottom;
   background-position-x: center;
 }
 
@@ -273,7 +276,7 @@ body {
 }
 
 .sec-1 .content-wraper .content .part-1 span {
-  background-color: rgba(0, 0, 0, 0.705);
+  text-shadow: black 4px 0px 0px, black 3.87565px 0.98962px 0px, black 3.51033px 1.9177px 0px, black 2.92676px 2.72656px 0px, black 2.16121px 3.36588px 0px, black 1.26129px 3.79594px 0px, black 0.28295px 3.98998px 0px, black -0.71298px 3.93594px 0px, black -1.66459px 3.63719px 0px, black -2.51269px 3.11229px 0px, black -3.20457px 2.39389px 0px, black -3.69721px 1.52664px 0px, black -3.95997px 0.56448px 0px, black -3.97652px -0.43278px 0px, black -3.74583px -1.40313px 0px, black -3.28224px -2.28625px 0px, black -2.61457px -3.02721px 0px, black -1.78435px -3.57996px 0px, black -0.84318px -3.91012px 0px, black 0.15041px -3.99717px 0px, black 1.13465px -3.8357px 0px, black 2.04834px -3.43574px 0px, black 2.83468px -2.82216px 0px, black 3.44477px -2.03312px 0px, black 3.84068px -1.11766px 0px, black 3.9978px -0.13272px 0px;
 }
 
 .sec-1 .content-wraper .content .part-2 {
@@ -468,6 +471,20 @@ body {
   margin-top: -45px;
 }
 
+@media (max-width: 1280px) {
+  .sec-2 .main .form .wraper {
+    width: 150px;
+  }
+  .sec-2 .main .form .arrow_box:after {
+    border-width: 25px;
+    margin-top: -25px;
+  }
+  .sec-2 .main .form .arrow_box:before {
+    border-width: 5px;
+    margin-top: -5px;
+  }
+}
+
 .sec-2 .main .form form .text {
   color: white;
 }
@@ -478,31 +495,31 @@ body {
 
 @-webkit-keyframes waring_animation {
   0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-  50% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
   100% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes waring_animation {
   0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-  50% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
   100% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -800,10 +817,10 @@ body {
 }
 
 .sec-4 .reviews .review {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f7f0c6), to(var(--clr-hen-yelow-light)));
-  background: linear-gradient(#f7f0c6, var(--clr-hen-yelow-light));
-  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#fde13f));
+  background: linear-gradient(#ffffff, #fde13f);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -819,6 +836,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-top-right-radius: 45px;
+  border-bottom-left-radius: 45px;
 }
 
 .sec-4 .reviews .review .content .title {
@@ -854,12 +873,19 @@ body {
           transform: translateY(-50%);
 }
 
+.sec-4 .reviews .review .person .pcontent .pname {
+  font-weight: bold;
+}
+
 .sec-5 .part1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #e9e7e7;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   border-radius: 35px;
+  margin-bottom: 30px;
 }
 
 .sec-5 .part1 .about {
@@ -874,6 +900,8 @@ body {
           margin-block-start: 0.1em;
   -webkit-margin-after: 0.1em;
           margin-block-end: 0.1em;
+  -webkit-margin-start: 15px;
+          margin-inline-start: 15px;
 }
 
 .sec-5 .part1 .about .text {
@@ -1025,6 +1053,7 @@ body {
   font-size: var(--fs-title);
   text-align: center;
   font-weight: bold;
+  color: white;
 }
 
 .sec-7 {
