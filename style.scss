@@ -989,7 +989,7 @@ body {
                 transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
                 z-index: -1;
             }
-
+            &.active svg,
             &:active svg,
             &:hover svg {
                 stroke-dashoffset: 0;

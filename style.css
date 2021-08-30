@@ -1040,6 +1040,7 @@ body {
   z-index: -1;
 }
 
+.sec-6 #sec_6_subtitle .red-pen.active svg,
 .sec-6 #sec_6_subtitle .red-pen:active svg,
 .sec-6 #sec_6_subtitle .red-pen:hover svg {
   stroke-dashoffset: 0;
