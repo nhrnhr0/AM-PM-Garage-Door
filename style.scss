@@ -665,11 +665,11 @@ body {
                     transform: scale(1);
                 }
 
-                90% {
+                70% {
                     transform: scale(1);
                 }
 
-                95% {
+                80% {
                     transform: scale(0.9);
                 }
 
@@ -688,7 +688,7 @@ body {
                 font-weight: bold;
                 display: inline-block;
                 margin-right: 80px;
-                animation: grow-slow 10s infinite alternate;
+                animation: grow-slow 5s infinite alternate;
 
                 &:hover {}
             }
@@ -862,9 +862,17 @@ body {
 }
 
 .sec-5 {
+    position: relative;
+    #part1_animation_trigger {
+        position: absolute;
+        top:80%;
+        left:50%;
+    }
     .part1 {
         display: flex;
         background-color: #e9e7e7;
+        background: radial-gradient(circle, var(--clr-hen-blue) 4%, #1360be 50%, #1360be 85%);
+        color:white;
         @include shadow-1();
         border-radius: 35px;
         margin-bottom: 30px;
@@ -989,13 +997,13 @@ body {
                 transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
                 z-index: -1;
             }
-            &.active svg,
-            &:active svg,
-            &:hover svg {
+            &.active svg
+             {
                 stroke-dashoffset: 0;
                 opacity: 1;
                 transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
             }
+            
         }
     }
 

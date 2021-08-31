@@ -1,3 +1,4 @@
+const RED_PEN_DELAY = 1500;
 var counter = document.getElementById("counters");
 var counterHeight = counter.clientHeight;
 var redpen = document.getElementById("redpen");
@@ -36,6 +37,7 @@ function scroll_listener() {
   animateRedPenListenr();
 }
 
+
 var is_redpen_active = false;
 function animateRedPenListenr() {
   var is_in_view = isInViewport(redpen);
@@ -43,7 +45,7 @@ function animateRedPenListenr() {
     is_redpen_active =true;
     setTimeout(()=>{
       redpen.classList.add('active');
-    },1000);
+    },RED_PEN_DELAY);
   }else if(is_in_view == false){
     is_redpen_active =false;
     redpen.classList.remove('active');
