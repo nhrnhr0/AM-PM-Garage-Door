@@ -445,8 +445,6 @@ body {
           transform: translate(-90%, 200%) rotate(45deg);
   -webkit-animation: move-arrow infinite 3s;
           animation: move-arrow infinite 3s;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .sec-2 .main .form .wraper .arrow_box {
@@ -923,7 +921,7 @@ body {
 
 .sec-5 #part1_animation_trigger {
   position: absolute;
-  top: 80%;
+  top: 30%;
   left: 50%;
 }
 

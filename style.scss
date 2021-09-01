@@ -434,7 +434,7 @@ body {
                 left: 0px;
                 transform: translate(-90%, 200%) rotate(45deg);
                 animation: move-arrow infinite 3s;
-                @include shadow-2();
+                //@include shadow-2();
                 $clr-arrow: var(--clr-hen-yellow);
 
 
@@ -880,7 +880,7 @@ body {
     overflow-x: hidden;
     #part1_animation_trigger {
         position: absolute;
-        top:80%;
+        top:30%;
         left:50%;
     }
     .part1 {

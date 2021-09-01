@@ -27,7 +27,7 @@
                         Did you ever got stuck outside or inside your garage?
                     </span>
                 </div>
-                <button class="button part-2">
+                <button id="first_cta_button" class="button part-2">
                     let’s prevent it!!
                 </button>
                 
@@ -67,9 +67,9 @@
                     If you answered <div class="fw-bold fw-large">yes</div> on one of the sections fill the form to get a FREE fast service call from one of our professional technician!
                 </div>
             </div>
-            <div class="form" data-aos="fade-left" data-aos-once="ture" data-aos-duration="1500">
-                <div class="wraper" data-aos="fade-left" data-aos-once="ture" data-aos-delay="1500">
-                    <div class="arrow_box">
+            <div id="form_1" class="form" data-aos="fade-left" data-aos-once="ture" data-aos-duration="1500">
+                <div class="wraper" >
+                    <div class="arrow_box" data-aos="fade-left" data-aos-once="ture" data-aos-delay="2000">
                         <div id="arrow_text_1">
                             Get 10% off now!!
                         </div>
@@ -78,7 +78,7 @@
                         </div>
                       </div>
                 </div>
-                <form action="POST">
+                <form action="POST" >
                     <div class="text">
                         For a <div class="fw-bold">FREE</div> consultation call and a <div class="fw-bold">FREE</div> estimate, leave details in the form now!
                     </div>
@@ -560,6 +560,10 @@
         });*/
         document.getElementById('cta_btn').addEventListener("click", (e)=>{
             document.getElementById('form_2').scrollIntoView({'behavior': 'smooth',})
+        });
+
+        document.getElementById('first_cta_button').addEventListener("click", (e)=>{
+            document.getElementById('form_1').scrollIntoView({'behavior': 'smooth',})
         });
 
         var swiper = new Swiper(".mySwiper", {
