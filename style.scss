@@ -734,6 +734,12 @@ body {
         }
 
         .points {
+            position: relative;
+            #card_trigger {
+                position: absolute;
+                top:30%;
+                left:50%;
+            }
             .card-row {
                 display: flex;
                 justify-content: space-between;
@@ -880,7 +886,7 @@ body {
     overflow-x: hidden;
     #part1_animation_trigger {
         position: absolute;
-        top:30%;
+        top:10%;
         left:50%;
     }
     .part1 {

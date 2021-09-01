@@ -776,6 +776,16 @@ body {
   fill: "purple";
 }
 
+.sec-3 .content-wraper .points {
+  position: relative;
+}
+
+.sec-3 .content-wraper .points #card_trigger {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+
 .sec-3 .content-wraper .points .card-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -921,7 +931,7 @@ body {
 
 .sec-5 #part1_animation_trigger {
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 50%;
 }
 
