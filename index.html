@@ -84,10 +84,10 @@
                     </div>
                     <div class="fields" >
                         <label for="name">Name: </label>
-                        <input type="text" name="name" id="name_inp" required>
+                        <input type="text" name="name" id="name_inp" oninvalid="this.setCustomValidity('This field is required')" required>
                         <label for="tel">Phone: </label>
 
-                        <input type="text" name="tel" id="tel_inp" required>
+                        <input type="text" name="tel" id="tel_inp" oninvalid="this.setCustomValidity('This field is required')" required>
                         <input type="submit" class="button"value="For a FREE estimate">
                     </div>
                 </form>
@@ -535,10 +535,10 @@
                     For a <div class="fw-bold">FREE</div> consultation call and a <div class="fw-bold">FREE</div> estimate, leave details in the form now!
                 </div>
                 <label for="name">Name: </label>
-                <input type="text" name="name" id="name_inp" required>
+                <input type="text" name="name" id="name_inp" oninvalid="this.setCustomValidity('This field is required')" required>
                 <label for="tel">Phone: </label>
 
-                <input type="text" name="tel" id="tel_inp" required>
+                <input type="text" name="tel" id="tel_inp" oninvalid="this.setCustomValidity('This field is required')" required>
                 <input class="button" type="submit" value="For a FREE estimate">
             </form>
         </div>
