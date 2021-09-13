@@ -982,26 +982,6 @@ body {
   width: 100%;
 }
 
-.sec-5 .part2 {
-  /*
-        .gg-container {
-            width: 100%;
-
-            .gg-box {
-                img {
-                    transition: 500ms;
-
-                    &:hover {
-                        transform: scale(1.1);
-                        z-index: 10;
-                        filter: brightness(75%);
-                    }
-                }
-            }
-        }
-*/
-}
-
 .sec-5 .part2 .swiper {
   width: 100%;
   padding-top: 50px;
